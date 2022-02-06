@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -10,8 +11,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className='bg-gray-800 w-full h-screen flex justify-center items-center'>
+      <div className='bg-gray-800 w-full h-screen flex justify-center items-center flex flex-col'>
         <h1 className='text-white text-6xl uppercase'>Ici miel ici</h1>
+        <Link href={'https://buy.stripe.com/fZedSBgh93gmgUweUU'}>
+          <a className='bg-green-700 text-white rounded-lg mt-4 px-4 py-2 hover:bg-green-600 hover:scale-105'>Achetez pack (x10) carte Gemaki</a>
+        </Link>
       </div>
 
     </div>
